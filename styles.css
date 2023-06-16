@@ -24,7 +24,6 @@ img {
 #header {
   width: 100%;
   background-color: #f1f5f9;
-  padding: 0 32px;
 }
 
 #nav {
@@ -74,7 +73,7 @@ img {
   width: 100%;
   min-height: 500px;
   background-color: #f1f5f9;
-  padding: 32px;
+  padding: 32px 0;
 }
 
 #hero-children {
@@ -122,7 +121,7 @@ img {
 @media screen and (min-width: 768px) {
   #hero {
     min-height: auto;
-    padding: 48px 32px;
+    padding: 48px 0;
   }
 
   #hero-heading-text {
@@ -148,7 +147,7 @@ img {
 
 @media screen and (min-width: 992px) {
   #hero {
-    padding: 64px 32px;
+    padding: 64px 0;
   }
   #hero-children {
     flex-direction: row;
@@ -175,8 +174,93 @@ img {
   }
 }
 
+/* Menu Section */
+
+#food-items-container {
+  padding: 64px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+#food-items-container-text {
+  max-width: 500px;
+}
+
+#food-items-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f5f9;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.food-item-img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.food-item-body {
+  padding: 16px;
+}
+
+.food-item-footer {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stars-img {
+  width: 140px;
+  margin: 8px 0;
+}
+
+.food-item-title {
+  font-size: 1.1rem;
+}
+
+.food-item-description {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.order-btn {
+  width: fit-content;
+  padding: 10px 38px;
+  background-color: #ef4444;
+  color: white;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  #food-items-selection {
+    flex-direction: row;
+  }
+}
+
 /* Shared styles */
 .container {
   max-width: 1200px;
   margin: auto;
+  padding: 0 32px;
+}
+
+.section-title {
+  font-size: 1.7rem;
+  margin-bottom: 16px;
+}
+
+.section-description {
+  color: #64748b;
+  font-size: 0.9rem;
+  letter-spacing: 0.9px;
+  line-height: 25px;
 }
