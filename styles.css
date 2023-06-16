@@ -187,12 +187,6 @@ img {
   max-width: 500px;
 }
 
-#food-items-selection {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .food-item {
   display: flex;
   flex-direction: column;
@@ -240,10 +234,35 @@ img {
   display: inline-block;
 }
 
-@media screen and (min-width: 768px) {
-  #food-items-selection {
-    flex-direction: row;
-  }
+/* Review section */
+
+#review-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review {
+  border: 1px solid #f1f5f9;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.review-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.review-img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 66px;
+  width: 66px;
 }
 
 /* Shared styles */
@@ -251,6 +270,10 @@ img {
   max-width: 1200px;
   margin: auto;
   padding: 0 32px;
+}
+
+.center {
+  text-align: center;
 }
 
 .section-title {
@@ -263,4 +286,16 @@ img {
   font-size: 0.9rem;
   letter-spacing: 0.9px;
   line-height: 25px;
+}
+
+.three-row-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .three-row-grid {
+    flex-direction: row;
+  }
 }
