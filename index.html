@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Website</title>
+    <meta
+      name="description"
+      content="Foodie - Your go-to Restaurant Website. Explore our menu and download our app."
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,18 +20,39 @@
   <body>
     <!-- Navbar/Header Section -->
     <header id="header">
-      <nav id="nav">
+      <nav id="nav" class="container">
         <h3 id="logo">Foodie</h3>
         <ul id="menu">
           <li class="menu-item"><a href="#">Home</a></li>
-          <li class="menu-item"><a href="#">Download</a></li>
           <li class="menu-item"><a href="#">Menu</a></li>
+          <li class="menu-item"><`a href="#">Reviews</a></li>
         </ul>
       </nav>
     </header>
     <!-- Main section -->
     <main>
-      <div id="hero"></div>
+        <!-- Hero Section -->
+      <section id="hero">
+        <div id="hero-children" class="container">
+          <div id="hero-cta">
+            <h1 id="hero-heading-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing
+            </h1>
+            <p id="hero-subheading-text">
+              elit. Dignissimos unde, iste architecto nobis delectus laudantium
+              adipisci doloribus! Ipsam veritatis mollitia earum nam, ut eius,
+              ea excepturi reprehenderit, tenetur cumque ipsum.
+            </p>
+            <button class="cta-btn">Menu</button>
+          </div>
+          <div id="hero-img">
+            <img src="./assets/hero-img.jpg" alt="food delivery" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu Section -->
+      <section></section>
     </main>
   </body>
 </html>
