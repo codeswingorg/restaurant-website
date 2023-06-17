@@ -305,9 +305,6 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  #newsletter {
-    min-height: 100px;
-  }
   .newsletter-inner-container {
     width: 100%;
     flex-direction: row;
